@@ -64,6 +64,7 @@ export default function Home() {
         <p className="text-lg mb-4">hola</p>
         <p className="text-lg mb-4">yoyo</p>
         <p className="text-lg mb-4">works</p>
+        <p className="text-lg mb-4">finally</p>
         {fetchError ? (
           <p className="text-red-500">{fetchError}</p>
         ) : (
