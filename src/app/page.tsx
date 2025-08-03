@@ -35,8 +35,8 @@ export default function Home() {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center p-24">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Frontend-Backend Connection Test</h1>
-          <p>Loading configuration...</p>
+          <h1 className="text-2xl font-bold mb-4 text-blue-600">Frontend-Backend Connection Test</h1>
+          <p className="text-blue-500">Loading configuration...</p>
         </div>
       </main>
     )
@@ -47,9 +47,9 @@ export default function Home() {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center p-24">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Frontend-Backend Connection Test</h1>
+          <h1 className="text-2xl font-bold mb-4 text-blue-600">Frontend-Backend Connection Test</h1>
           <p className="text-red-500">Configuration Error: {configError}</p>
-          <p className="mt-2 text-sm text-gray-500">
+          <p className="mt-2 text-sm text-blue-400">
             Make sure config.json is available in the public directory
           </p>
         </div>
@@ -60,13 +60,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="text-center">
-        <h1 className="text-2xl font-bold mb-4">Frontend-Backend Connection Test</h1>
+        <h1 className="text-2xl font-bold mb-4 text-blue-600">Frontend-Backend Connection Test</h1>
         {fetchError ? (
           <p className="text-red-500">{fetchError}</p>
         ) : (
-          <p>{data ? data : 'Loading...'}</p>
+          <p className="text-blue-500">{data ? data : 'Loading...'}</p>
         )}
-        <div className="mt-4 text-sm text-gray-500">
+        <div className="mt-4 text-sm text-blue-400">
           <p>Backend URL: {config?.backendUrl || 'Not loaded'}</p>
           <p>Source: Runtime config (config.json)</p>
         </div>
