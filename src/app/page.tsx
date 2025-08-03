@@ -62,6 +62,7 @@ export default function Home() {
       <div className="text-center">
         <h1 className="text-2xl font-bold mb-4 text-blue-600">Frontend-Backend Connection Test</h1>
         <p className="text-lg mb-4">hola</p>
+        <p className="text-lg mb-4">yoyo</p>
         {fetchError ? (
           <p className="text-red-500">{fetchError}</p>
         ) : (
